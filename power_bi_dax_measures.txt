@@ -1,0 +1,19 @@
+Power BI DAX Measures
+
+Total Appointments = COUNTROWS(appointments)
+
+Total No Shows = SUM(appointments[no_show_flag])
+
+Total Show Ups = SUM(appointments[show_up_flag])
+
+No Show Rate = DIVIDE([Total No Shows], [Total Appointments])
+
+Show Up Rate = DIVIDE([Total Show Ups], [Total Appointments])
+
+No Show Rate % = FORMAT([No Show Rate], "0.00%")
+
+Show Up Rate % = FORMAT([Show Up Rate], "0.00%")
+
+Average Waiting Days = AVERAGE(appointments[waiting_days])
+
+Unique Patients = DISTINCTCOUNT(appointments[patient_id])
