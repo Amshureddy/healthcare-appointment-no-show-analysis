@@ -67,7 +67,7 @@ The Power BI dashboard includes:
 
 ## Dashboard Screenshot
 
-![Healthcare Patient Appointment No-Show Dashboard](dashboard_screenshot.png)
+![Healthcare Patient Appointment No-Show Dashboard](dashboard_screenshot_new.png)
 ## Key Insights
 
 1. The cleaned dataset contains 110,521 valid appointment records.
