@@ -4,7 +4,7 @@
 
 This project analyzes healthcare appointment records to identify patterns linked with patient no-shows. The goal is to help healthcare administrators understand which patient groups and appointment factors are associated with missed appointments so they can improve scheduling, reminders, and follow-up planning.
 
-The analysis was completed using Python for data cleaning, SQL for analysis logic, and Power BI for dashboard reporting.
+I used Python to clean the data, SQL to explore the main no-show patterns, and Power BI to build the final dashboard.
 
 ## Business Problem
 
@@ -12,7 +12,7 @@ Healthcare clinics lose appointment capacity, staff time, and potential revenue 
 
 **Which patient and appointment factors are associated with higher no-show rates?**
 
-The dashboard focuses on no-show trends by age group, waiting period, SMS reminder status, appointment weekday, and neighborhood.
+I focused on understanding no-show trends by age group, waiting period, SMS reminder status, appointment weekday, and neighborhood..
 
 ## Dataset
 
@@ -75,7 +75,7 @@ The Power BI dashboard includes:
 3. Teen and young adult patients show higher no-show rates compared with senior patients.
 4. Longer waiting periods are associated with higher no-show rates.
 5. Patients who received SMS reminders show a higher observed no-show rate. This should not be interpreted as SMS causing no-shows because reminders may have been sent more often to higher-risk patients.
-6. Appointment weekday shows some variation, with Saturday appearing higher in the dashboard.
+6. Appointment weekday shows some variation, with Saturday shows a higher observed no-show rate compared with other appointment weekdays..
 7. Neighborhood-level results should be interpreted carefully because smaller appointment counts can create unusually high percentages.
 
 ## Business Recommendations
@@ -88,32 +88,23 @@ The Power BI dashboard includes:
 
 ## Project Files
 
-Suggested GitHub folder structure:
 
-```text
-healthcare-appointment-no-show-analysis/
-│
-├── data/
-│   ├── raw/
-│   └── cleaned/
-│
-├── notebooks/
-│   └── data_cleaning_eda.ipynb
-│
-├── sql/
-│   ├── create_tables.sql
-│   └── data_analysis_queries.sql
-│
-├── dashboard/
-│   └── healthcare_no_show_dashboard.pbix
-│
-├── images/
-│   └── dashboard_screenshot.png
-│
-├── README.md
-└── insights.md
-```
+| File                                         | Description                                             |
+| -------------------------------------------- | ------------------------------------------------------- |
+| `README.md`                                  | Project summary, process, insights, and recommendations |
+| `dashboard_screenshot.png`                   | Screenshot of the final Power BI dashboard              |
+| `data_cleaning_script.py`                    | Python script used to clean and prepare the dataset     |
+| `create_tables.sql`                          | SQL script for creating the appointment table           |
+| `data_analysis_queries.sql`                  | SQL queries used to analyze no-show patterns            |
+| `data_dictionary.md`                         | Explanation of important columns used in the project    |
+| `power_bi_dax_measures.txt`                  | DAX measures used for dashboard calculations            |
+| `insights.md`                                | Detailed insights from the analysis                     |
+| `healthcare_appointments_analysis_ready.csv` | Cleaned dataset used for analysis and dashboarding      |
 
-## Resume Bullet
+## What I Learned
 
-Analyzed 110K+ healthcare appointment records using Python, SQL, and Power BI to identify no-show trends by age group, waiting period, SMS reminders, appointment weekday, and neighborhood. Built an interactive dashboard with KPI cards, slicers, and visual insights to support appointment attendance improvement recommendations.
+Through this project, I practiced cleaning a real-world healthcare dataset, creating useful derived columns, writing SQL queries for analysis, and building an interactive Power BI dashboard. I also learned how no-show rates can be affected by factors such as patient age group, waiting period, appointment weekday, and SMS reminder status.
+
+## Project Outcome
+
+The final dashboard helps identify patterns in missed appointments and provides simple business recommendations that a clinic could use to improve appointment planning and reminder strategies.
